@@ -1,23 +1,22 @@
-import { createApolloServer } from 'meteor/apollo';
-import { makeExecutableSchema } from 'graphql-tools';
+const { ApolloServer } = require('apollo-server');
 
 const typeDefs = `
 type Query {
-    hi: String
+  hi: String
 }
 `;
 
 const resolvers = {
-    Query: {
-        hi() {
-            return "Hello";
-        }
+  Query: {
+    hi() {
+      return "3..2..1...GO !";
     }
+  }
 };
 
-const schema = makeExecutableSchema({
-    typeDefs: typeDefs,
-    resolvers : resolvers
-})
 
-createApolloServer({ schema });
+const server = new ApolloServer({ typeDefs, resolvers });
+
+server.listen().then(({ url }) => {
+  console.log(`🚀  Server ready at ${url}`);
+});
