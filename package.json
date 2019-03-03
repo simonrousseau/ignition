@@ -18,9 +18,13 @@
     "graphql-server-express": "^1.4.0",
     "graphql-tag": "^2.10.1",
     "graphql-tools": "^4.0.4",
+    "lodash": "^4.17.11",
     "meteor-node-stubs": "^0.4.1",
     "react": "^16.8.1",
     "react-apollo": "^2.4.1",
     "react-dom": "^16.8.1"
+  },
+  "devDependencies": {
+    "babel-plugin-inline-import": "^3.0.0"
   }
 }
