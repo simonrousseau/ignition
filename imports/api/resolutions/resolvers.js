@@ -1,21 +1,17 @@
+import Resolutions from './resolutions';
+
+// Resolutions.insert({
+//     name: "Test Res"
+// })
+
+const res = Resolutions.find({}).fetch();
+
+console.log(res);
 
 export default {
     Query: {
       resolutions() {
-          return [
-              {
-                  _id: "87653247",
-                  name: "TestA"
-              },
-              {
-                  _id: "324586967",
-                  name: "TestB"
-              },
-              {
-                  _id: "198213564",
-                  name: "TestC"
-              }
-          ]
+          return res;
       }
     }
   };
