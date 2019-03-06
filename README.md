@@ -8,8 +8,10 @@
 
 > GraphQL with Apollo, Meteor & React
 
-## Code Samples
-
 ## Installation
 
 > 
+
+## Demo
+
+> https://ignition-rocket.herokuapp.com/
