@@ -2,7 +2,8 @@ const { ApolloServer } = require('apollo-server');
 import merge from 'lodash/merge';
 
 import ResolutionsSchema from '../../api/resolutions/Resolutions.graphql';
-import ResolutionResolvers from '../../api/resolutions/resolvers';
+import ResolutionsResolvers from '../../api/resolutions/resolvers';
+
 //hi
 
 const testSchema = `
@@ -22,7 +23,7 @@ const testResolvers = {
   }
 };
 
-const resolvers = merge(testResolvers, ResolutionResolvers);
+const resolvers = merge(testResolvers, ResolutionsResolvers);
 
 
 const server = new ApolloServer({ typeDefs, resolvers });
